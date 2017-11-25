@@ -1,0 +1,3 @@
+spring:
+  profiles:
+    active: prod  #选择prod环境的配置
