@@ -1,3 +1,12 @@
 spring:
   profiles:
     active: prod  #选择prod环境的配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dbgirl
+    username: root
+    password: 111
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
