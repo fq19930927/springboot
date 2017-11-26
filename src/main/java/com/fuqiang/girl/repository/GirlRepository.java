@@ -1,5 +1,6 @@
-package com.fuqiang.girl;
+package com.fuqiang.girl.repository;
 
+import com.fuqiang.girl.domain.Girl;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

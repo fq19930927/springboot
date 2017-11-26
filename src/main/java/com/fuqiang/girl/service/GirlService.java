@@ -1,5 +1,7 @@
-package com.fuqiang.girl;
+package com.fuqiang.girl.service;
 
+import com.fuqiang.girl.domain.Girl;
+import com.fuqiang.girl.repository.GirlRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,25 +1,14 @@
-package com.fuqiang.girl;
+package com.fuqiang.girl.properties;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
-@Entity
-public class Girl {
+@Component
+@ConfigurationProperties(prefix = "girl")//将"girl"前缀的属性注入
+public class GirlProperties {
 
-    @Id
-    @GeneratedValue
-    private Integer id;
     private String cupSize;
     private Integer age;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getCupSize() {
         return cupSize;
